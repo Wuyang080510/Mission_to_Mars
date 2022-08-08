@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+    <style>
+      body {
+        background-image: url("https://wallpaperaccess.com/full/6289317.jpg");
+        background-size: cover;
+      }
+    </style>  
   </head>
   <body>
     <div class="container" style ="background-color:#F5F5F5;">
@@ -45,7 +51,7 @@
           />
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
           <!-- Mars Facts -->
           <div class="row" id="mars-facts">
             <h4><strong>Mars Facts</strong></h4>
@@ -63,7 +69,7 @@
         </div>
 
         {% for hemisphere in mars.hemisphere_info %}
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="thumbnail">
             <img src="{{hemisphere.image_url | default('static/images/error.png', true)}}" alt="...">
             <div class="caption">
